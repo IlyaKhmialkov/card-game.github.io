@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Card game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to card game</h1>
+      <section class="game-setup">
+        <label for="game-size">Select game size:</label>
+        <select name="game-size" id="game-size">
+          <option value="2x3" selected>2x3</option>
+          <option value="3x4">3x4</option>
+          <option value="4x6">4x6</option>
+          <option value="5x8">5x8</option>
+        </select>
+        <button class="game-start">start</button>
+        <button class="game-restart" disabled>restart</button>
+      </section>
+    </header>
+    <template></template>
+    <aside>
+      <h2>Stats</h2>
+      <p>attempts:<span class="attempts">0</span></p>
+      <p>games:<span class="games">0</span></p>
+    </aside>    
+    <script src="script.js" > </script>
+  </body>
+</html>

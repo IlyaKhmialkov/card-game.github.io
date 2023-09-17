@@ -1,0 +1,110 @@
+
+body {
+    margin: 0 auto;
+    background-color: rgb(69, 69, 69);
+    display: grid;
+    grid-template: 
+    'head head' 19vh
+    'game aside' 81vh / 75vw 25vw;
+}
+header {
+    background-color: rgb(97, 97, 97);
+    padding: 1.5vw;
+    color: azure;
+    grid-area: head;
+}
+header h1 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    text-shadow: 0 0.5px #808d93,
+       	              -0.5px 0 #cdd2d5,
+       	              -0.5px 1px #808d93,
+       	              -1px 0.5px #cdd2d5,
+       	              -1px 1.5px #808d93,
+       	              -1.5px 1px #cdd2d5,
+       	              -1.5px 2px #808d93,
+       	              -2px 1.5px #cdd2d5,
+       	              -2px 2.5px #808d93,
+       	              -2.5px 2px #cdd2d5,
+       	              -2.5px 3px #808d93,
+       	              -3px 2.5px #cdd2d5,
+       	              -3px 3.5px #808d93,
+       	              -3.5px 3px #cdd2d5,
+       	              -3.5px 4px #808d93,
+       	              -4px 3.5px #cdd2d5;
+}
+label {
+    margin: 0.5rem 0.5rem 0.5rem 2rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+select, 
+button {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+main {
+    display: grid;
+    grid-template-columns: 75fr 25fr;
+}
+aside {
+    background-color: rgb(97, 97, 97);
+    font-size: 2rem;
+    color: azure;
+    border: 0.5rem solid rgb(0, 0, 0);
+    grid-area: aside;
+}
+aside * {
+    margin: 0 0 1rem 0.5rem;
+}
+span {
+    font-size: 75%;
+}
+template{
+    margin: 0.5rem;
+    display: grid;
+    grid-area: game;
+}
+div {
+    margin: 0 0.5rem 0.5rem 0;
+    background-color: #a97bff;
+    width: 90%;
+    height: 90%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+}
+.selected {
+    background-color: #f37af7;
+}
+.found {
+    background-color: rgb(66, 63, 51);
+}
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    label {
+        margin: 0.1rem;
+    }
+    aside {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 450px) {
+    body{
+        grid-template: 
+        'head' 20vh
+        'game' 55vh 
+        'aside' 25vh;
+    }
+    div {
+        font-size: 3.5vh;
+        margin: 0 0.4rem 0.4rem 0;
+        border: 0.1rem solid black;
+    }
+}
