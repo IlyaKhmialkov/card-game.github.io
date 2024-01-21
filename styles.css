@@ -4,13 +4,14 @@ body {
     background-color: rgb(69, 69, 69);
     display: grid;
     grid-template: 
-    'head head' 19vh
-    'game aside' 81vh / 75vw 25vw;
+    'head head' 20vh
+    'game aside' 80vh / 75vw 25vw;
 }
 header {
     background-color: rgb(97, 97, 97);
     padding: 1.5vw;
     color: azure;
+    border-bottom: 0.5rem solid rgb(0, 0, 0);
     grid-area: head;
 }
 header h1 {
@@ -52,7 +53,7 @@ aside {
     background-color: rgb(97, 97, 97);
     font-size: 2rem;
     color: azure;
-    border: 0.5rem solid rgb(0, 0, 0);
+    border-left: 0.5rem solid rgb(0, 0, 0);
     grid-area: aside;
 }
 aside * {
@@ -62,7 +63,7 @@ span {
     font-size: 75%;
 }
 template{
-    margin: 0.5rem;
+    margin: 2.5vh;
     display: grid;
     grid-area: game;
 }
@@ -92,7 +93,7 @@ div {
         margin: 0.1rem;
     }
     aside {
-        font-size: 1.5rem;
+        font-size: 1.5rem;        
     }
 }
 @media (max-width: 450px) {
@@ -106,5 +107,9 @@ div {
         font-size: 3.5vh;
         margin: 0 0.4rem 0.4rem 0;
         border: 0.1rem solid black;
+    }
+    aside {
+        border-left: none;
+        border-top: 0.5rem solid rgb(0, 0, 0);
     }
 }
